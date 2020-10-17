@@ -1,0 +1,24 @@
+<ion-view view-title="Perfil">
+	<ion-content>
+		<div class="container profileContainer">
+			<div class="row">
+				<div class="col">
+					<div class="prevPhoto">
+						<img ng-if="foto == undefined" class="previewProfile" id="img" src="https://static.vecteezy.com/system/resources/previews/000/574/512/non_2x/vector-sign-of-user-icon.jpg" alt="profile">
+						<img ng-if="foto !=undefined" class="previewProfile" id="img" src=" {{foto}} " alt="">
+					</div>
+					
+					<div class="upimg btn">
+						<input style="width:70%" type="file" name="foto" id="foto">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<button ng-click="saveChange()">Guardar Cambios</button>
+			</div>
+		</div>
+		
+	</ion-content>
+</ion-view>
